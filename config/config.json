@@ -1,0 +1,20 @@
+{
+  "General": [
+    {
+      "type": "number-input",
+      "key": "refresh-interval",
+      "label": "Refresh Interval",
+      "description": "Interval in milliseconds to wait between updates of the connection status and torrent information",
+      "default": "1000",
+      "value": "1000"
+    },
+    {
+      "type": "toggle",
+      "key": "test-toggle",
+      "label": "Test Toggle",
+      "description": "just a test",
+      "default": "true",
+      "value": "false"
+    }
+  ]
+}

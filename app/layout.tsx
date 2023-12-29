@@ -4,6 +4,8 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 import Providers from "./providers";
+import { ColorSchemeScript } from "@mantine/core";
+import "@mantine/core/styles.css";
 
 export const metadata: Metadata = {
   title: "qBolt",
@@ -17,6 +19,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <ColorSchemeScript />
+      </head>
       <body className={`${inter.className} antialiased`}>
         <Providers>{children}</Providers>
       </body>
